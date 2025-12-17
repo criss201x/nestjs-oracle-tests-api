@@ -1,8 +1,8 @@
 # Nestjs specific
-/dist
-/node_modules
-/build
-/tmp
+api/dist
+api/node_modules
+api/build
+api/tmp
 
 # Logs
 logs
@@ -22,3 +22,21 @@ lerna-debug.log*
 # temp directory
 .temp
 .tmp
+
+# Docker volumes
+oracle-data/
+cloudbeaver-data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
