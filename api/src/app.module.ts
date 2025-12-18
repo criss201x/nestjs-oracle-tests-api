@@ -20,7 +20,7 @@ import { EmpleadosModule } from './empleados/empleados.module';
         username: configService.get<string>('DB_USER', 'system'),
         password: configService.get<string>('DB_PASSWORD', 'OraclePass123'),
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
-        synchronize: false,
+        synchronize: false, // no modifica ni crea tablas automáticamente en base de datos 
       }),
     }),
     EmpleadosModule,
